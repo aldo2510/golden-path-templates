@@ -159,7 +159,7 @@ spec:
       name: Generar archivos desde el skeleton
       action: fetch:template
       input:
-        url: ./skeleton
+        url: ${{ template.target }}#skeleton
         values:
           component_id: ${{ parameters.component_id }}
           description: ${{ parameters.description }}
